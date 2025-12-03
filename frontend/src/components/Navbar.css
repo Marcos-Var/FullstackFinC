@@ -121,7 +121,8 @@
 .hamburger::after {
   content: '';
   position: absolute;
-  width: 30px;
+  left: 0;              
+  width: 100%;
   height: 3px;
   background: var(--text-primary);
   transition: var(--transition);
