@@ -15,8 +15,8 @@ function App() {
           subtitle="Your one-stop shop for amazing products"
         />
         <div className="container">
-          <h2>Home Page</h2>
-          <p>Frontend is working! 🎉</p>
+          <h2>Pagina Pricipal</h2>
+          <p>Bienvenidos! a la mejor tienda Tech del Pais 🎉</p>
         </div>
         <Footer />
       </div>
