@@ -20,8 +20,7 @@ import com.example.app.service.ProductService;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "*") // Permite peticiones desde cualquier origen (para desarrollo)
-
+@CrossOrigin(origins = "http://localhost:3000")
 public class ProductController {
     @Autowired
     private ProductService productService;

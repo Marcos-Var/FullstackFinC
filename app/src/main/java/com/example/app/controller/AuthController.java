@@ -1,23 +1,28 @@
 package com.example.app.controller;
 
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.example.app.config.JwtUtil;
 import com.example.app.dto.AuthRequest;
 import com.example.app.dto.AuthResponse;
 import com.example.app.dto.RegisterRequest;
 import com.example.app.model.User;
 import com.example.app.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.Optional;
 
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000") 
 public class AuthController {
     @Autowired
     private UserRepository userRepository;
