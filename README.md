@@ -103,14 +103,6 @@ La alta disponibilidad se logra distribuyendo la aplicación entre múltiples zo
 
 Los microservicios son servicios pequeños e independientes, desplegables por separado, que permiten mayor escalabilidad y velocidad de desarrollo. Kubernetes los potencia gestionando el escalado automático, auto-reparación, networking, distribución de carga y aislamiento por contenedores.
 
-🛠 Instrucciones de uso del proyecto
-
-(Aquí puedes poner cómo correr tu frontend y backend si quieres — dímelo y te lo preparo.)
-
-🚀 Despliegue en AWS
-
-(Si quieres, también te preparo esta sección con EC2, RDS y MongoDB Atlas.)
-
 👨‍💻 Autor
 
 Marcos Vargas
